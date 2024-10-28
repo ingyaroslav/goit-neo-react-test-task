@@ -1,0 +1,136 @@
+.locationLabel {
+  color: var(--gray);
+  text-align: left;
+  display: block;
+  padding-bottom: 8px;
+}
+
+.locationWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.locationIcon {
+  position: absolute;
+  left: 20px; 
+  width: 20px; 
+  height: 20px;   
+  fill: var(--gray);
+}
+
+.filledInput{
+  fill: var(--main)
+}
+
+.locationInput {
+  border-radius: 12px;
+  border: none;
+  padding: 16px 48px;
+  width: 360px; 
+  background-color: var(--inputs);
+}
+
+.locationInput:focus,
+.locationInput:hover {
+  outline: none;
+}
+
+.filtersLabel {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text);
+  text-align: left;
+  padding: 40px 0 42px 0;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.equipmentList,
+.typeList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 24px 0 22px 0;
+}
+
+.typeList {
+  padding-bottom: 40px;
+}
+
+.equipmentItem,
+.typeItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc((100% - 2 * 12px) / 3);
+  gap: 8px;
+
+  border: 1px solid var(--gray-light);
+  border-radius: 12px;
+  padding: 15px;
+
+  transition: var(--basic-transition);
+}
+
+.typeItem {
+  padding: 3px 15px;
+}
+
+.equipmentItem:hover,
+.equipmentItem:focus,
+.typeItem:hover,
+.typeItem:focus {
+  cursor: pointer;
+}
+
+.isActive {
+  border: 1px solid #e44848;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+}
+
+.text {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--main);
+}
+
+.button {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 200px;
+  background: var(--button);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  transition: var(--basic-transition);
+  padding: 16px 60px;
+  max-width: 166px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: var(--button-hover);
+}

@@ -1,0 +1,93 @@
+.image {
+  border-radius: 10px;
+  max-width: 292px;
+  max-height: 320px;
+  object-fit: cover;
+}
+
+.itemWrapper {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.RatLocWrapper,
+.amountwrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.amountwrapper {
+  gap: 13px;
+}
+
+.title,
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 4px;
+}
+
+.favIcon {
+  width: 26px;
+  height: 24px;
+  transition: var(--basic-transition);
+}
+
+.favIcon:hover,
+.favIcon:focus {
+  fill: var(--button);
+  cursor: pointer;
+}
+
+.active {
+  fill: var(--button);
+}
+
+.ratingIcon {
+  width: 16px;
+  height: 16px;
+  fill: var(--rating);
+}
+
+.locationIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.description {
+  text-align: left;
+  max-height: 24px;
+  overflow: hidden; 
+  text-overflow: ellipsis;  
+}
+
+.reviews {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.featureSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}

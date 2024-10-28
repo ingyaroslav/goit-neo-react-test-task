@@ -1,0 +1,35 @@
+.wrapper {
+  border-radius: 10px;
+  padding: 44px 52px;
+  background: var(--inputs);
+  width: 631px;
+}
+
+.title {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--gray-light);
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.specifications {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+}
+
+.specificationItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.specificationLabel,
+.specificationValue {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}

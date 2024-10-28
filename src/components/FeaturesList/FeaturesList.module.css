@@ -1,0 +1,12 @@
+.featureList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.camperPage {
+  align-items: flex-start;
+  align-content: flex-start;
+  min-height: 204px;
+}
